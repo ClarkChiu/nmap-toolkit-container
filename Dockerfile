@@ -7,7 +7,8 @@ RUN apk update && \
         nmap-ncat \
         nmap-nping \
 	nmap-nselibs \
-        nmap-scripts
+        nmap-scripts \
+	--repository=http://dl-cdn.alpinelinux.org/alpine/edge/main
 
 ENTRYPOINT ["nmap"]
 
